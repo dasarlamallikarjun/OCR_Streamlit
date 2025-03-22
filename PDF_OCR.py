@@ -3,6 +3,9 @@ import pytesseract
 from docx import Document
 import os
 
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
+
 class PDF_OCR:
     def __init__(self, pdf_path, lang='eng'):
         self.pdf_path = pdf_path
