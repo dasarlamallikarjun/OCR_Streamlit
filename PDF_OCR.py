@@ -7,6 +7,7 @@ class PDF_OCR:
     def __init__(self, pdf_path, lang='eng'):
         self.pdf_path = pdf_path
         self.lang = lang  # Set language for OCR
+        self.poppler_path = "/usr/bin" 
 
     def process_pdf(self):
         # Convert PDF to images
